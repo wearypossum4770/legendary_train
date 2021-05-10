@@ -1,0 +1,195 @@
+[
+  {
+    "model": "todos.todo",
+    "pk": 1,
+    "fields": {
+      "title": "Start App",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 2,
+    "fields": {
+      "title": "HTML I",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 3,
+    "fields": {
+      "title": "CSS",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 4,
+    "fields": {
+      "title": "Responsive design",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 5,
+    "fields": {
+      "title": "Git",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 6,
+    "fields": {
+      "title": "JavaScript I",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 7,
+    "fields": {
+      "title": "JavaScript II",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+
+  {
+    "model": "todos.todo",
+    "pk": 7,
+    "fields": {
+      "title": "JavaScript II",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 7,
+    "fields": {
+      "title": "JavaScript II",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 7,
+    "fields": {
+      "title": "JavaScript II",
+      "content": "Make the app",
+      "date_modified": "2021-05-07T22:17:25.087Z",
+      "date_created": "2021-05-07T22:17:25.088Z",
+      "date_due": "2021-05-07",
+      "date_completed": "2021-05-07T22:17:25.087Z",
+      "completed": true,
+      "created_by": 1,
+      "assigned_to": 2,
+      "note": "Hey do something about this."
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 8,
+    "fields": {
+      "title": "Make dinner",
+      "content": "Web project",
+      "date_created": "",
+      "date_due": "2019-06-14",
+      "completed": false,
+      "note": "Please check with mgmt first"
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 9,
+    "fields": {
+      "title": "Bake bread",
+      "content": "Example List",
+      "date_created": "2012-03-14",
+      "completed": true
+    }
+  },
+  {
+    "model": "todos.todo",
+    "pk": 10,
+    "fields": {
+      "title": "Bring dessert",
+      "content": "Web project",
+      "date_created": "2015-06-248",
+      "note": "Every generation throws a hero up the pop charts"
+    }
+  }
+]

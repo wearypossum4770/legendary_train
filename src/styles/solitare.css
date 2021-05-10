@@ -1,0 +1,7 @@
+/** @format */
+
+.card-back {
+  background-image: url(./minified_rear_card_design.svg);
+  width: 30%;
+  height: 30%;
+}
