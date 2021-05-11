@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 from django.contrib.auth import get_user_model
 from django.db.models.signals import post_save
 from django.dispatch import Signal, receiver
 
 from .models import Profile
+=======
+from django.dispatch import Signal, receiver
+from django.contrib.auth import get_user_model
+from django.db.models.signals import post_save
+
+from users.models import Profile
+>>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5
 
 
 @receiver(post_save, sender=get_user_model, dispatch_uid="users.create_or_save_profile")
 def create_or_save_profile(sender, instance, created, *args, **kwargs):
     if created:
         Profile.objects.create(user=instance)
+<<<<<<< HEAD
         Token.objects.create(user=instance)
 
     else:
@@ -38,3 +47,7 @@ def create_or_save_profile(sender, instance, created, *args, **kwargs):
 # Post.objects.create(title = "Top 10 Python Tips and Tricks",content = "Pro minim iuvaret ad. No nam ornatus principes euripidis, at sale vituperatoribus eos, eros regione scripserit id mea. Has ne inermis nostrum, quo tantas melius dissentias at! Ut vim tibique omnesque. An mel modo ponderum, eum at probo appetere imperdiet? Natum quaeque intellegebat per ex. Cu viris clita sit?\r\n\r\nReque menandri dissentias sed ne, no tota nonumes eos, vix in tempor maiestatis erant.",user_id =  1)
 # Post.objects.create(title = "Top 5 YouTube Channels For Learning Programming",content = "Quo inani quando ea, mel an vide adversarium suscipiantur. Et dicunt eleifend splendide pro. Nibh animal dolorem vim ex, nec te agam referrentur. Usu admodum ocurreret ne.\r\n\r\nEt dico audire cotidieque sed, cibo latine ut has, an case magna alienum.",user_id =  2)
 # Post.objects.create(title = "My Latest Updated Post",content = "Erat expetenda definitionem id eos. Semper suscipit eum ut, eum ex nemore copiosae. Nam probatus pertinacia eu! No alii voluptua abhorreant nec, te pro impedit concludaturque, in sea malis torquatos disputationi! Nam te alii nobis ponderum, ei fugit accusamus pro.\r\n\r\nCongue salutandi ex eam! Mei an prima consulatu, erat detracto eu quo? Vim ea esse utinam efficiantur, at noster dicunt.",user_id =  1)
+=======
+    else:
+        instance.profile.save()
+>>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5

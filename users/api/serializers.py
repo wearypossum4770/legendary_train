@@ -30,7 +30,11 @@ class UserSerializer(ModelSerializer):
 
 
 class ProfileSerializer(ModelSerializer):
+<<<<<<< HEAD
     users = PrimaryKeyRelatedField(many=True, read_only=True)
+=======
+    user = UserSerializer()
+>>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5
 
     class Meta:
         model = Profile

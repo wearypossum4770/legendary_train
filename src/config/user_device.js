@@ -1,0 +1,3 @@
+/** @format */
+
+memoryAmount = navigator.deviceMemory;

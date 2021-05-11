@@ -2,9 +2,15 @@ import subprocess
 from os import rename
 from pathlib import Path
 
+<<<<<<< HEAD
 from celery import shared_task
 from django.conf import settings
 from PIL import Image
+=======
+from PIL import Image
+from celery import shared_task
+from django.conf import settings
+>>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5
 
 from users.models import Profile
 

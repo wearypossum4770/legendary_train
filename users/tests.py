@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from pathlib import Path
 
 import msgpack
@@ -61,3 +62,8 @@ class TestProfile(TestCase):
 
 
 # def test_image_open():
+=======
+from django.test import TestCase
+
+# Create your tests here.
+>>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5

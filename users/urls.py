@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.contrib.auth.views import (
     LoginView,
     LogoutView,
@@ -11,6 +12,21 @@ from rest_framework.routers import DefaultRouter
 
 from users.api.rest_views import ProfileViewSet, UserViewSet
 from users.views import  profile, register
+=======
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from django.contrib.auth.views import (
+    LoginView,
+    LogoutView,
+    PasswordResetView,
+    PasswordResetDoneView,
+    PasswordResetConfirmView,
+    PasswordResetCompleteView,
+)
+
+from users.api.rest_views import UserViewSet, ProfileViewSet
+from users.views import profile, register, find_users_friends
+>>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5
 
 router = DefaultRouter()
 # app_name = "users"
@@ -19,10 +35,17 @@ router.register(r"profile", ProfileViewSet)
 
 urlpatterns = [
     path("api/", include(router.urls)),
+<<<<<<< HEAD
     # path("friends/", find_users_friends, name="friends"),
     # path("send_freind_request/<int:userId/"),
     # path("accept_friend_request/<int:requestId/"),
     # path("register/", register, name="register"),
+=======
+    path("friends/", find_users_friends, name="friends"),
+    # path("send_freind_request/<int:userId/"),
+    # path("accept_friend_request/<int:requestId/"),
+    path("register/", register, name="register"),
+>>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5
     path("profile/", profile, name="profile"),
     path("login/", LoginView.as_view(template_name="users/login.html"), name="login"),
     path(
