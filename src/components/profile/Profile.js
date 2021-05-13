@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { users } from "./profile.test";
+import { userList } from "./profileinit";
 
 export default function Profile() {
   let { username } = useParams();
   const [user, setUser] = useState();
   const [isLoading, setIsLoading] = useState(true);
-  const [api, setApi] = useState(users);
+  const [api, setApi] = useState(userList);
   useEffect(() => {
     const findUser = username =>
       setUser(api.filter(p_list => p_list.user.username === username)[0]);
@@ -31,7 +31,7 @@ export default function Profile() {
               />
             </div>
             <button className="w3-button w3-green">Accept</button>
-              <button className="w3-button w3-red">Decline</button>
+            <button className="w3-button w3-red">Decline</button>
           </div>
         </div>
       )}

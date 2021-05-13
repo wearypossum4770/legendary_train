@@ -10,6 +10,8 @@ export default function NavBar() {
     { link: "/solitare", page: "Solitare", id: 4 },
     { link: "/todo", page: "Todo List", id: 5 },
     { link: "/profile/genryusai.shigekuni.yamamoto", page: "Profile", id: 6 },
+    { link: "/signature", page: "SignaturePad", id: 7 },
+    { link: "/blog", page: "Blog", id: 8 },
   ];
   return (
     <>

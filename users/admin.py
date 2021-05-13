@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-from django.contrib import admin
-
-from users.models import Profile
-
-admin.site.register(Profile)
-=======
 from django.contrib.auth.models import User
 from django.contrib.admin import StackedInline, site
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
@@ -41,4 +34,3 @@ class UserAdmin(BaseUserAdmin):
 
 site.unregister(User)
 site.register(User, UserAdmin)
->>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5

@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 from pathlib import Path
 
-import msgpack
 import pytest
-from django.conf import settings
-from django.contrib.auth import get_user_model
-from django.test import TestCase
+import msgpack
 from PIL import Image
+from django.conf import settings
+from django.test import TestCase
+from django.contrib.auth import get_user_model
 
 from users.models import Profile
 
@@ -62,8 +61,3 @@ class TestProfile(TestCase):
 
 
 # def test_image_open():
-=======
-from django.test import TestCase
-
-# Create your tests here.
->>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5

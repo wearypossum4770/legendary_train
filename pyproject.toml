@@ -96,6 +96,7 @@ exclude = '''
     | \.tox
     | \.venv
     | _build
+    | \.legendary_train 
     | buck-out
     | build
     | dist

@@ -1,22 +1,4 @@
-<<<<<<< HEAD
-from django.contrib.auth import get_user_model
-from django.db.models import (
-    CASCADE,
-    CharField,
-    DateTimeField,
-    ForeignKey,
-    ImageField,
-    ManyToManyField,
-    Model,
-    OneToOneField,
-    TextField,
-)
-from django.utils import timezone
-from PIL import Image
-
-User = get_user_model()
 # https://github.com/revsys/django-friendship/blob/master/friendship/models.py
-=======
 from PIL import Image
 from django.utils import timezone
 from django.contrib.auth import get_user_model
@@ -37,6 +19,13 @@ from django.db.models import (
 )
 
 User = get_user_model()
+
+
+def upload_file():
+    profiles = Profile.objects.all()
+
+
+output_size = (300, 300)
 
 
 class Profile(Model):
@@ -62,11 +51,14 @@ class Profile(Model):
     headline = CharField(max_length=50, null=True, blank=True)
     bio = TextField(null=True, blank=True)
 
+    @property
+    def process_image(self):
+        return [self.user, self.image]
+
     def __str__(self):
         return f"{self.user.first_name.capitalize()} {self.user.last_name.capitalize()}'s  Profile"
 
 
->>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5
 class FriendRequest(Model):
     """Model to represent friendship requests"""
 
@@ -90,7 +82,6 @@ class FriendRequest(Model):
 
     def __str__(self):
         return f"{self.from_user_id}"
-<<<<<<< HEAD
 
 
 #     def accept(self):
@@ -139,34 +130,3 @@ class FriendRequest(Model):
 #         self.save()
 #         # bust_cache("requests", self.to_user.pk)
 #         return True
-def upload_file():
-    profiles = Profile.objects.all()
-
-
-output_size = (300, 300)
-
-
-class Profile(Model):
-    user = OneToOneField(User, on_delete=CASCADE)
-    middle_name = CharField(max_length=50, null=True, blank=True)
-    friends = ManyToManyField(User, blank=True, related_name="friends")
-    image = ImageField(default="default.webp", upload_to="profile_pics")
-    headline = CharField(max_length=50, null=True, blank=True)
-    bio = TextField(null=True, blank=True)
-
-    @property
-    def process_image(self):
-        return [self.user, self.image]
-
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
-        img = Image.open(self.image.path)
-        if img.height > 300 or img.width > 300:
-            img.thumbnail(output_size)
-            img.save(self.image.path)
-
-    def __str__(self):
-        print(self.image.__dict__)
-        return f"{self.user.first_name.capitalize()} {self.user.last_name.capitalize()}'s  Profile"
-=======
->>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5

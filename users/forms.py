@@ -1,12 +1,7 @@
 from crispy_forms.helper import FormHelper
 from django.contrib.auth import get_user_model
-<<<<<<< HEAD
-from django.contrib.auth.forms import UserCreationForm
-from django.forms import EmailField, ModelForm
-=======
 from django.forms import ModelForm, EmailField
 from django.contrib.auth.forms import UserCreationForm
->>>>>>> 07b0ff3d47923f9eeeb106dff01ed70b8cf689f5
 
 from users.models import Profile
 

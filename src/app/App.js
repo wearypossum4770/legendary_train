@@ -9,12 +9,18 @@ import WeatherContainer from "../components/weather/WeatherContainer";
 import SolitareHand from "../components/solitare/SolitareHand";
 import Todo from "../components/todo/ToDo";
 import Profile from "../components/profile/Profile";
+import Signature from "../components/signatures/Signature";
+import Blog from "../components/blog/Blog";
+import Post from "../components/blog/Post";
 export default function App() {
   return (
     <div data-testid="rendered-app">
       <NavBar />
       <Router>
         <Switch>
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/:post_id" component={Post} />
+          <Route exact path="/signature" component={Signature} />
           <Route exact path="/" component={Home} />
           <Route exact path="/chat" component={ChatLobby} />
           <Route exact path="/chat/:roomName" component={ChatContainer} />
@@ -25,7 +31,7 @@ export default function App() {
         </Switch>
       </Router>
       <footer className="w3-container w3-bottom w3-theme w3-margin-top">
-        <h3>Footer</h3>
+        <h3></h3>
       </footer>
     </div>
   );
